@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 import { FaInstagram, FaMusic, FaSpotify, FaYoutube } from "react-icons/fa";
 
-const page = async ({ params }: { params: any }) => {
+const page = async ({ params }: { params: Promise<{name:string}> }) => {
   const { name } = await params;
 
   return (
