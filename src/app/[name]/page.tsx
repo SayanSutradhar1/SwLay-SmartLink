@@ -2,7 +2,10 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 import { FaInstagram, FaMusic, FaSpotify, FaYoutube } from "react-icons/fa";
 
-export default function SocialLinksPage() {
+export default async function SocialLinksPage({ params }: { params: any }) {
+
+    const { name } = await params;
+
   return (
     <div className="flex min-h-[90dvh] flex-col items-center justify-center p-4 ">
       <div className="w-full max-w-[680px] mx-auto px-4 py-8 flex flex-col items-center backdrop-blur-md bg-black/10 rounded-lg shadow-lg">
@@ -10,11 +13,11 @@ export default function SocialLinksPage() {
         <Avatar className="h-24 w-24 mb-4 ring-4 ring-white shadow-md">
           <AvatarImage alt="Profile" />
           <AvatarFallback className="bg-gradient-to-br from-violet-500 to-indigo-500 text-white text-xl">
-            John Doe
+            {name}
           </AvatarFallback>
         </Avatar>
 
-        <h1 className="text-xl font-bold mb-1 text-center">@johndoe</h1>
+        <h1 className="text-xl font-bold mb-1 text-center">{name}</h1>
         <p className="text-sm text-gray-600 mb-6 text-center max-w-xs">
           Digital Artist | Musician | Composer
         </p>
@@ -22,7 +25,7 @@ export default function SocialLinksPage() {
         {/* Links Section - Linktree style */}
         <div className="w-full space-y-3 mb-8">
           <Link
-            href="https://instagram.com"
+            href={`https://instagram.com`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 w-full bg-white hover:bg-gray-50 text-gray-800 font-medium py-3 px-4 rounded-md shadow-sm transition-all hover:shadow hover:translate-y-[-2px] border border-gray-100"
@@ -32,7 +35,7 @@ export default function SocialLinksPage() {
           </Link>
 
           <Link
-            href="https://instagram.com"
+            href="https://spotify.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 w-full bg-white hover:bg-gray-50 text-gray-800 font-medium py-3 px-4 rounded-md shadow-sm transition-all hover:shadow hover:translate-y-[-2px] border border-gray-100"
