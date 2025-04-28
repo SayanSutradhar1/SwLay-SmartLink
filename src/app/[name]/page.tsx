@@ -25,7 +25,6 @@ const page = async ({ params }: { params: Promise<{name:string}> }) => {
         <div className="w-full space-y-3 mb-8">
           <Link
             href={`https://instagram.com`}
-            target="_blank"
             rel="noopener noreferrer external"
             className="flex items-center gap-3 w-full bg-white hover:bg-gray-50 text-gray-800 font-medium py-3 px-4 rounded-md shadow-sm transition-all hover:shadow hover:translate-y-[-2px] border border-gray-100"
           >
@@ -35,7 +34,6 @@ const page = async ({ params }: { params: Promise<{name:string}> }) => {
 
           <Link
             href="https://spotify.com"
-            target="_blank"
             rel="noopener noreferrer external"
             className="flex items-center gap-3 w-full bg-white hover:bg-gray-50 text-gray-800 font-medium py-3 px-4 rounded-md shadow-sm transition-all hover:shadow hover:translate-y-[-2px] border border-gray-100"
           >
@@ -45,7 +43,6 @@ const page = async ({ params }: { params: Promise<{name:string}> }) => {
 
           <Link
             href="https://youtube.com"
-            target="_blank"
             rel="noopener noreferrer external"
             className="flex items-center gap-3 w-full bg-white hover:bg-gray-50 text-gray-800 font-medium py-3 px-4 rounded-md shadow-sm transition-all hover:shadow hover:translate-y-[-2px] border border-gray-100"
           >
@@ -55,7 +52,6 @@ const page = async ({ params }: { params: Promise<{name:string}> }) => {
 
           <Link
             href="https://youtube.com"
-            target="_blank"
             rel="noopener noreferrer external"
             className="flex items-center gap-3 w-full bg-white hover:bg-gray-50 text-gray-800 font-medium py-3 px-4 rounded-md shadow-sm transition-all hover:shadow hover:translate-y-[-2px] border border-gray-100"
           >
