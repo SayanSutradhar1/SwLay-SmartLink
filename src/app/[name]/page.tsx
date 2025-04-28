@@ -2,9 +2,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 import { FaInstagram, FaMusic, FaSpotify, FaYoutube } from "react-icons/fa";
 
-export default async function SocialLinksPage({ params }: { params: any }) {
-
-    const { name } = await params;
+const page = async ({ params }: { params: any }) => {
+  const { name } = await params;
 
   return (
     <div className="flex min-h-[90dvh] flex-col items-center justify-center p-4 ">
@@ -69,4 +68,6 @@ export default async function SocialLinksPage({ params }: { params: any }) {
       </div>
     </div>
   );
-}
+};
+
+export default page;
