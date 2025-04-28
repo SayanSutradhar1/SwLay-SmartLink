@@ -26,7 +26,7 @@ const page = async ({ params }: { params: Promise<{name:string}> }) => {
           <Link
             href={`https://instagram.com`}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer external"
             className="flex items-center gap-3 w-full bg-white hover:bg-gray-50 text-gray-800 font-medium py-3 px-4 rounded-md shadow-sm transition-all hover:shadow hover:translate-y-[-2px] border border-gray-100"
           >
             <FaInstagram className="h-5 w-5 text-pink-500 flex-shrink-0" />
@@ -36,7 +36,7 @@ const page = async ({ params }: { params: Promise<{name:string}> }) => {
           <Link
             href="https://spotify.com"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer external"
             className="flex items-center gap-3 w-full bg-white hover:bg-gray-50 text-gray-800 font-medium py-3 px-4 rounded-md shadow-sm transition-all hover:shadow hover:translate-y-[-2px] border border-gray-100"
           >
             <FaSpotify className="h-5 w-5 text-green-500 flex-shrink-0" />
@@ -46,7 +46,7 @@ const page = async ({ params }: { params: Promise<{name:string}> }) => {
           <Link
             href="https://youtube.com"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer external"
             className="flex items-center gap-3 w-full bg-white hover:bg-gray-50 text-gray-800 font-medium py-3 px-4 rounded-md shadow-sm transition-all hover:shadow hover:translate-y-[-2px] border border-gray-100"
           >
             <FaYoutube className="h-5 w-5 text-red-500 flex-shrink-0" />
@@ -56,7 +56,7 @@ const page = async ({ params }: { params: Promise<{name:string}> }) => {
           <Link
             href="https://youtube.com"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer external"
             className="flex items-center gap-3 w-full bg-white hover:bg-gray-50 text-gray-800 font-medium py-3 px-4 rounded-md shadow-sm transition-all hover:shadow hover:translate-y-[-2px] border border-gray-100"
           >
             <FaMusic className="h-5 w-5 text-red-500 flex-shrink-0" />
