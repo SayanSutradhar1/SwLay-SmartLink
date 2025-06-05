@@ -1,7 +1,6 @@
-
 const page = () => {
   return (
-    <div>page</div>
+    <div>This is / route ; You have to go to /artistname route to vitis artist profile</div>
   )
 }
 
